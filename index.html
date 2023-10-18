@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><strong>formulaire type</strong></h1>
+    <h2><strong>Coordonnes</strong></h2>
+
+    <form action="sub.php" method="post">
+        <div>
+            <label for="nom"><strong>Nom:</strong> </label><br>
+            <input type="text" id="nom" name="nom">
+        </div>
+        <br>
+
+        <div>
+            <label for="prenom">
+                <strong> Prenom :</strong>
+            </label><br>
+            <input type="prenom" id="prenom" name="prenom">
+        </div>
+        <br>
+
+        <div>
+            <label for="checkbox">je desire recevoir une documentation </label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div> <br>
+
+
+        <div>
+            <label for="pays">pays</label>
+            <select name="pays" id="pays">
+                <option value="MA">MA : maroc</option>
+                <option value="FR">FR : france</option>
+                <option value="BEL">BEL : Belgique</option>
+                <option value="CH">CH : suisse</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="sexe"> sexe</label>
+            <input type="radio" id="male" name="sexe" value="masculin">
+            <label for="male">masculin</label>
+            <input type="radio" id="female" name="sexe" value="feminin">
+            <label for="female">female</label>
+
+        </div>
+
+
+        <div>
+            <label for="domaine d activite">
+                <h2>domaine d activite</h2>
+            </label><br>
+            <div>vous pouvez en choisir plus qu'un</div>
+
+            <input type="checkbox" id="domaine pedagogie" name="domaine" value="pedagogie">
+            <label for="domaine pedagogie"> pedagogie</label>
+
+            <input type="checkbox" id="domaine psychologie" name="domaine" value="psychologie">
+            <label for="domaine psychologie"> psychologie</label>
+
+            <input type="checkbox" id="domaine informatique" name="domaine" value="informatique">
+            <label for="domaine informatique"> informatique</label>
+
+            <input type="checkbox" id="domaine autre" name="domaine" value="autre">
+            <label for="domaine autre">autre</label>
+
+        </div>
+        <div>
+            <label for="commentaire">
+                <h3>commentaire:</h3>
+            </label><br>
+            <p>si vous le voulez, vous pouvez decrire vos activite ou interets</p>
+            <textarea name="commentaire" id="commentaire" cols="60" rows="10"></textarea>
+
+
+        </div>
+
+        <div>
+            <button type="reset">Effacer les donnees</button>
+            <button type="submit"> Enregistrer les donnees</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
